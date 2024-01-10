@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "reddit-stream",
+			"path": "../../../reddit-stream"
+		},
+		{
+			"name": "src",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

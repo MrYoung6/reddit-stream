@@ -1,0 +1,10 @@
+.home-container {
+    display: flex ;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.homepage-container {
+    display: flex;
+    margin: 0 auto;
+} 

@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    align-items: center;
+    width: 690px;
+    height: 64px;
+    margin: 0 auto;
+    background-color: rgb(35, 34, 34);
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.navbar-link > span {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+
+

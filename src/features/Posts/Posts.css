@@ -1,0 +1,15 @@
+.media-post {
+    margin: 0 auto !important;
+}
+
+.link-post {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+
+}
+
+.url-post {
+    color: rgb(219, 151, 74);
+    padding-left: 2%;
+}

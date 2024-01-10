@@ -1,0 +1,31 @@
+.header-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(44, 43, 43);
+    
+}
+
+.link-header {
+    text-decoration: none;
+}
+
+.header-name {
+    color: white;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: -42px;
+    font-size: 1.35rem;
+}
+
+.icon-reddit {
+    padding-top: 1.3rem;
+    color: rgb(219, 151, 74);
+    margin-left: 2px;
+    padding-bottom: 10px;
+}
+
+.header-name:hover {
+    cursor: pointer;
+}
