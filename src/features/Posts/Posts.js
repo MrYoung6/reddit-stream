@@ -38,6 +38,7 @@ export function Post(props) {
             sx={{
                 marginTop: '10px',
                 maxWidth: '690px',
+                minWidth: '340px',
                 backgroundColor: 'rgb(36, 36, 36)',
             }}
         >

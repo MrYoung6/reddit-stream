@@ -19,10 +19,10 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 150,
+      width: '20ch',
       backgroundColor: 'gray',
       padding: 0,
-      margin: 0,
+      
     }
   },
 };
@@ -45,7 +45,7 @@ export function Communities() {
 
   return (
     <div className="communities-container">
-      <FormControl sx={{ m: 0, width: 200, }} >
+      <FormControl sx={{ m: 0, width: 200, marginLeft: '130px', backgroundColor: "transparent"}} >
         <InputLabel
           id="demo-multiple-name-label"
           sx={{

@@ -1,18 +1,19 @@
-nav {
+.container-nav {
     display: flex;
     align-items: center;
+    justify-items: flex-start;
     width: 690px;
     height: 64px;
     margin: 0 auto;
     background-color: rgb(35, 34, 34);
 }
 
-ul {
+.nav-list {
     display: inline-flex;
     list-style: none;
 }
 
-li {
+.nav-item {
     margin-left: 1rem;
 }
 
@@ -26,10 +27,29 @@ li {
     vertical-align: middle;
 }
 
-.navbar-link > span {
+.icon-name {
     font-size: 1.3rem;
     vertical-align: middle;
 }
 
+@media only screen and (min-width: 320px) and (max-width:441px) {
+    .icon-name {
+        display: none;
+    }
+    .container-nav {
+        width: 100%;
+        margin-top: 0;
+        height: 52px;
+    }
+    .navbar-link {
+        justify-content: space-between;
+
+    }
+}
 
 
+@media only screen and (min-width: 760px) and (max-width:830px) {
+    .container-nav {
+        /* margin-top: 100px; */
+    }
+}

@@ -8,30 +8,30 @@ import "./navSelect.css"
 
 export function NavSelect() {
     return (
-        <nav>
-            <ul>
-                <li>
+        <nav className="container-nav">
+            <ul className="nav-list">
+                <li className="nav-item">
                     <NavLink to='/top' className='navbar-link'>
                         <LeaderboardIcon className="nav-icon" fontSize="Large" />
-                        <span>Top</span>
+                        <span className="icon-name">Top</span>
                     </NavLink>
                 </li>
-                <li>
+                <li className="nav-item">
                     <NavLink to='/hot' className='navbar-link'>
                         <WhatshotIcon className="nav-icon" fontSize="Large" />
-                        <span>Hot</span>
+                        <span className="icon-name">Hot</span>
                     </NavLink>
                 </li>
-                <li>
+                <li className="nav-item">
                     <NavLink to='/new' className='navbar-link'>
                         <NewReleasesIcon className="nav-icon" fontSize="Large" />
-                        <span>New</span>
+                        <span className="icon-name">New</span>
                     </NavLink>
                 </li>
-                <li>
+                <li className="nav-item">
                     <NavLink to='/best' className='navbar-link'>
                         <RocketIcon className="nav-icon" fontSize='Large' />
-                        <span>Best</span>
+                        <span className="icon-name">Best</span>
                     </NavLink>
                 </li>
             </ul>

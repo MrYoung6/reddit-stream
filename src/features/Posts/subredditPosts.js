@@ -33,7 +33,7 @@ export function SubredditPost(props) {
         className='card-post'
         sx={{
             marginTop: '10px',
-            maxWidth: '790px',
+            maxWidth: '690px',
             backgroundColor: 'rgb(36, 36, 36)',
             borderRadius: '15px',
         }}>
