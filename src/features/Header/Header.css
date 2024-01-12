@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* position: fixed; */
     width: 100%;
     background-color: rgb(44, 43, 43);
     z-index: 1;

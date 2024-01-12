@@ -77,7 +77,6 @@ export function Search() {
   return (
     <form className='search-form' >
       <Searchapp
-      // className='search-form'
         value={searchTerm}
         onChange={handleChange}
         onKeyDown={handleKeyPress}
