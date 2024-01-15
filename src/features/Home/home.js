@@ -16,7 +16,7 @@ export function Home() {
 
     useEffect(() => {
         dispatch(loadHome())
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="home-container">

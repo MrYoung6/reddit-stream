@@ -24,39 +24,39 @@ export function PostAndComments() {
     return (
         post ?
             <div className="home-container">
-                <Post
-                    key={post.id}
-                    title={post.title}
-                    author={`u/${post.author}`}
-                    authorPrefixed={`u/${post.author}`}
-                    subredditPrefixed={post['subreddit_name_prefixed']}
-                    subreddit={post.subreddit}
-                    url={post.url}
-                    media={post.media}
-                    comments={post['num_comments']}
-                    votes={post.ups}
-                    posthint={post['post_hint']}
-                    domain={post.domain}
-                    permalink={post.permalink}
-                    created={post['created_utc']}
-                />
-                {comments && comments.length > 0 && comments.map((comment) => {
-                    if (comment.body && comment.body !== "[removed]") {
-                        return (
-                            <Comments
-                                key={comment.id}
-                                body={comment.body}
-                                author={comment.author}
-                                votes={comment.ups}
-                                created={comment['created_utc']}
-                                replies={comment.replies?.data}
-                            />
-                        )
-                    }
-
-                })}
-            </div> :
-            <div>
+                    <Post
+                        key={post.id}
+                        title={post.title}
+                        author={`u/${post.author}`}
+                        authorPrefixed={`u/${post.author}`}
+                        subredditPrefixed={post['subreddit_name_prefixed']}
+                        subreddit={post.subreddit}
+                        url={post.url}
+                        media={post.media}
+                        comments={post['num_comments']}
+                        votes={post.ups}
+                        posthint={post['post_hint']}
+                        domain={post.domain}
+                        permalink={post.permalink}
+                        created={post['created_utc']}
+                    />
+                    {comments && comments.length > 0 && comments.map((comment) => {
+                        if (comment.body && comment.body !== "[removed]") {
+                            return (
+                                <Comments
+                                    key={comment.id}
+                                    body={comment.body}
+                                    author={comment.author}
+                                    votes={comment.ups}
+                                    created={comment['created_utc']}
+                                    replies={comment.replies?.data}
+                                />
+                            )
+                        }
+                            return null
+                    })}
+                </div> :
+                <div>
             </div>
     )
 

@@ -1,9 +1,7 @@
 body {
   margin: 0;
   background-color: black;
-  font-family: 'Inconsolata', monospace;
   font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Syne Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

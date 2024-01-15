@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { chooseCommunities, fillCommunities } from "./communitiesSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Link } from "react-router-dom";
@@ -31,17 +29,16 @@ const MenuProps = {
 export function Communities() {
   const dispatch = useDispatch();
   const allCommunities = useSelector(chooseCommunities);
-  const theme = useTheme();
+
+
 
   useEffect(() => {
     dispatch(fillCommunities())
   }, [dispatch])
 
-  const [value, setValue] = React.useState([]);
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  }
+
+
 
   return (
     <div className="communities-container">
@@ -59,7 +56,6 @@ export function Communities() {
           value={[]}
           input={<OutlinedInput label="Communities" />}
           MenuProps={MenuProps}
-          onChange={handleChange}
         >
           <List
             component="div"
